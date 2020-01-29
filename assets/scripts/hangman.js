@@ -29,7 +29,7 @@ class Hangman{
         if(isUnique && isBadGuess){
             this.noOfGuesses--
         }
-        checkIfSolved();
+        this.checkIfSolved();
     }
 
     checkIfSolved(){
@@ -44,7 +44,7 @@ class Hangman{
         }
     }
 
-    updateFeedback(){
+    get updateFeedback(){
         if (this.status === "playing") {
             return `Guesses remaining are ${this.noOfGuesses}`;
         }else if(this.status === "unsuccessful"){
