@@ -49,7 +49,7 @@ class Hangman{
         if (this.status === "playing") {
             return `Guesses remaining are ${this.noOfGuesses}`;
         }else if(this.status === "unsuccessful"){
-            return `Sorry you failed: the correct word was ${this.word.join('')}`;
+            return `Sorry you failed: the correct sentence was : ${this.word.join('')}`;
         }else if(this.status === "successful"){
             return "Awesome you are really  good at guessing"
         }
